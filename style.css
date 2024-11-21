@@ -1,0 +1,110 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+/* Header Section */
+header {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header .header-content {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #4CAF50;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.profile-image {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Career Objective, Personal Data, Skills, Education, Achievements */
+h2 {
+    background-color: #4aa54d;
+    color: white;
+    padding: 10px;
+    font-size: 22px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    position: relative;
+}
+
+
+ul li::before {
+    content: "\2022"; /* Unicode character for a bullet point (•) */
+    font-size: 36px;  /* Large size for the dot */
+    color: #333;  /* Dark color */
+    position: absolute;
+    left: -40px; /* Adjust position of the dot */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center the dot */
+}
+
+ul li h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+ul li p {
+    color: #020202;
+}
+
+ul li ul {
+    margin-left: 20px;
+}
+
+ul li ul li {
+    margin-bottom: 5px;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #777;
+}
